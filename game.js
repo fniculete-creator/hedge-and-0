@@ -124,14 +124,27 @@
   function shortYear(y) { return "'" + String(y).slice(2); }
 
   /* ---------- setup screen ---------- */
+  // Anti-cheat: an in-progress game found at page load means the player
+  // left mid-run (reload, closed tab). The run ends where it stood —
+  // no resuming to research picks between spins.
+  function forfeitIfAbandoned() {
+    const saved = loadSaved();
+    if (saved && saved.seed === currentSeed().seed && !saved.done) {
+      saved.done = true;
+      saved.forfeited = true;
+      try { localStorage.setItem(STORAGE_GAME, JSON.stringify(saved)); } catch (e) {}
+    }
+  }
+
   function initSetup() {
     try { $("player-name").value = localStorage.getItem(STORAGE_NAME) || ""; } catch (e) {}
     const { seed } = currentSeed();
     const saved = loadSaved();
     const playedToday = saved && saved.seed === seed && saved.done;
-    const inProgress = saved && saved.seed === seed && !saved.done;
     $("played-note").classList.toggle("hidden", !playedToday);
-    $("resume-note").classList.toggle("hidden", !inProgress);
+    if (playedToday && saved.forfeited) {
+      $("played-note").textContent = "Your run ended when you left the page mid-game — new wheel at midnight Pacific.";
+    }
     $("start-daily").textContent = playedToday ? "See Today's Results" : "Spin Today's Wheel";
   }
 
@@ -483,7 +496,9 @@
     const pct = (state.bankroll / START_BANKROLL - 1) * 100;
     $("res-bankroll").textContent = fmt$(state.bankroll);
     const sub = $("res-sub");
-    sub.textContent = `${fmtPct(pct)} on your $1,000,000 · ${emojiLine()}`;
+    sub.textContent = state.forfeited
+      ? `Run ended after ${state.picks.length} of ${SPINS} spins — you left the page. ${emojiLine()}`
+      : `${fmtPct(pct)} on your $1,000,000 · ${emojiLine()}`;
     sub.className = "results-sub " + updown(pct);
     $("res-bench").textContent =
       `Just holding the S&P 500 those ${SPINS} years: ${fmt$(benchmark())}`;
@@ -628,6 +643,7 @@
 
   /* ---------- wire up ---------- */
   document.addEventListener("DOMContentLoaded", () => {
+    forfeitIfAbandoned();
     initSetup();
     $("start-daily").addEventListener("click", startGame);
     $("show-lb").addEventListener("click", openLeaderboard);
