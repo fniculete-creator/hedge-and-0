@@ -33,8 +33,17 @@ def rows():
 
 
 def fetch(url):
-    req = urllib.request.Request(url, headers=UA)
-    return urllib.request.urlopen(req, timeout=60).read()
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            return urllib.request.urlopen(req, timeout=60).read()
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < 3:
+                wait = 20 * (attempt + 1)
+                print(f"    429 - backing off {wait}s")
+                time.sleep(wait)
+                continue
+            raise
 
 
 def main():
@@ -65,7 +74,7 @@ def main():
             kb = os.path.getsize(out) // 1024
             print(f"  {name}: {img.size[0]}x{img.size[1]}, {kb} KB")
             done.append(name)
-            time.sleep(0.5)
+            time.sleep(2.0)
         except Exception as e:
             print(f"  {name}: FAILED {e}")
             failed.append(name)

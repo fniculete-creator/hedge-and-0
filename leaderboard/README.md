@@ -17,17 +17,19 @@ sudo systemctl enable --now hedge0-lb
 curl -s localhost:8126/hedge0/health   # -> {"ok": true}
 ```
 
-Then route it through the existing HTTPS reverse proxy for
-`32.194.248.231.nip.io` (the one already fronting the alpaca/jeopardy
-backends). Caddy — add inside that site block:
+Then route it through the existing nginx HTTPS reverse proxy for
+`32.194.248.231.nip.io` — add to `/etc/nginx/sites-available/leaderboard`
+above the `location / {` block (DONE 2026-08-30):
 
 ```
-handle /hedge0/* {
-    reverse_proxy localhost:8126
+location /hedge0/ {
+    proxy_pass http://localhost:8126;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
 }
 ```
 
-(nginx equivalent: `location /hedge0/ { proxy_pass http://127.0.0.1:8126; }`)
+Then `sudo nginx -t && sudo systemctl reload nginx`.
 
 Verify from outside: `curl -s https://32.194.248.231.nip.io/hedge0/health`
 
