@@ -1,0 +1,197 @@
+ticker,yahoo_symbol,name,sector,years,dow_years,note
+MMM,,3M,Industrials,2000-2025,2000-2025,
+AXP,,American Express,Financials,2000-2025,2000-2025,
+AAPL,,Apple,Information Technology,2000-2025,2015-2025,
+BA,,Boeing,Industrials,2000-2025,2000-2025,
+CAT,,Caterpillar,Industrials,2000-2025,2000-2025,
+CVX,,Chevron,Energy,2000-2025,2008-2025,
+CSCO,,Cisco,Information Technology,2000-2025,2009-2025,
+KO,,Coca-Cola,Consumer Staples,2000-2025,2000-2025,
+DIS,,Disney,Communication Services,2000-2025,2000-2025,
+GS,,Goldman Sachs,Financials,2000-2025,2014-2025,
+HD,,Home Depot,Consumer Discretionary,2000-2025,2000-2025,
+HON,,Honeywell,Industrials,2000-2025,2000-2007,Rejoined the Dow in August 2020
+IBM,,IBM,Information Technology,2000-2025,2000-2025,
+INTC,,Intel,Information Technology,2000-2025,2000-2024,Dropped from the Dow November 2024
+JNJ,,Johnson & Johnson,Health Care,2000-2025,2000-2025,
+JPM,,JPMorgan Chase,Financials,2000-2025,2000-2025,
+MCD,,McDonald's,Consumer Discretionary,2000-2025,2000-2025,
+MRK,,Merck,Health Care,2000-2025,2000-2025,
+MSFT,,Microsoft,Information Technology,2000-2025,2000-2025,
+NKE,,Nike,Consumer Discretionary,2000-2025,2014-2025,
+PG,,Procter & Gamble,Consumer Staples,2000-2025,2000-2025,
+TRV,,Travelers,Financials,2000-2025,2009-2025,
+UNH,,UnitedHealth,Health Care,2000-2025,2013-2025,
+VZ,,Verizon,Communication Services,2000-2025,2004-2025,
+V,,Visa,Financials,2009-2025,2014-2025,IPO March 2008
+WMT,,Walmart,Consumer Staples,2000-2025,2000-2025,
+CRM,,Salesforce,Information Technology,2008-2025,2021-2025,
+AMGN,,Amgen,Health Care,2000-2025,2021-2025,
+NVDA,,Nvidia,Information Technology,2001-2025,2025-2025,Joined the Dow November 2024
+SHW,,Sherwin-Williams,Materials,2000-2025,2025-2025,
+AMZN,,Amazon,Consumer Discretionary,2000-2025,2024-2025,Joined the Dow February 2024
+XOM,,ExxonMobil,Energy,2000-2025,2000-2020,
+PFE,,Pfizer,Health Care,2000-2025,2004-2020,
+RTX,,RTX,Industrials,2000-2025,2000-2020,United Technologies until the 2020 Raytheon merger
+GE,,General Electric,Industrials,2000-2025,2000-2018,Dropped from the Dow June 2018
+T,,AT&T,Communication Services,2000-2025,2000-2014,SBC took the AT&T name in 2005
+HPQ,,HP,Information Technology,2000-2025,2000-2013,
+BAC,,Bank of America,Financials,2000-2025,2008-2013,
+C,,Citigroup,Financials,2000-2025,2000-2008,Bailed out 2008
+AIG,,AIG,Financials,2000-2025,2004-2008,Bailed out September 2008
+MO,,Altria,Consumer Staples,2000-2025,2000-2007,Philip Morris renamed Altria 2003
+IP,,International Paper,Materials,2000-2025,2000-2003,
+DD,,DuPont,Materials,2000-2017,2000-2017,Merged into DowDuPont September 2017
+DOW,,Dow Inc,Materials,2020-2025,2020-2024,Spun out of DowDuPont April 2019
+WBA,NONE,Walgreens,Consumer Staples,2000-2024,2018-2023,Taken private by Sycamore August 2025
+KFT,MDLZ,Kraft Foods,Consumer Staples,2002-2012,2009-2012,Renamed Mondelez in the 2012 split
+EK,NONE,Eastman Kodak,Information Technology,2000-2010,2000-2003,Bankrupt January 2012
+GM,NONE,General Motors,Consumer Discretionary,2000-2008,2000-2008,Bankrupt June 2009
+AA,NONE,Alcoa,Materials,2000-2015,2000-2013,Split into Arconic and Alcoa Corp 2016
+ENE,NONE,Enron,Energy,2000-2001,,Bankrupt December 2001
+LEH,NONE,Lehman Brothers,Financials,2000-2008,,Bankrupt September 2008
+WCOM,NONE,WorldCom,Communication Services,2000-2002,,Bankrupt July 2002
+BSC,NONE,Bear Stearns,Financials,2000-2007,,Sold to JPMorgan for $10 a share March 2008
+WM,NONE,Washington Mutual,Financials,2000-2008,,Seized by regulators September 2008
+SUNW,NONE,Sun Microsystems,Information Technology,2000-2009,,Bought by Oracle 2010
+YHOO,NONE,Yahoo,Communication Services,2000-2016,,Core business sold to Verizon 2017
+SHLD,NONE,Sears Holdings,Consumer Discretionary,2005-2011,,Bankrupt October 2018
+CC,NONE,Circuit City,Consumer Discretionary,2000-2007,,Liquidated 2009
+TWX,NONE,Time Warner,Communication Services,2000-2017,,AOL merger 2001 then sold to AT&T 2018
+RSH,NONE,RadioShack,Consumer Discretionary,2000-2011,,Bankrupt February 2015
+AVP,NONE,Avon Products,Consumer Staples,2000-2015,,Sold to Natura 2020
+JCP,NONE,JCPenney,Consumer Discretionary,2000-2012,,Bankrupt May 2020
+BBBY,NONE,Bed Bath & Beyond,Consumer Discretionary,2005-2019,,Bankrupt April 2023
+XRX,,Xerox,Information Technology,2000-2020,,Dropped from the S&P 500 March 2021
+LU,NONE,Lucent,Information Technology,2000-2006,,Merged into Alcatel-Lucent 2006
+CPQ,NONE,Compaq,Information Technology,2000-2001,,Bought by HP May 2002
+DELL,NONE,Dell,Information Technology,2000-2012,,Taken private October 2013
+TWTR,NONE,Twitter,Communication Services,2019-2022,,Taken private by Elon Musk October 2022
+GOOGL,,Alphabet,Communication Services,2006-2025,,IPO August 2004
+META,,Meta,Communication Services,2013-2025,,Joined the S&P 500 December 2013
+TSLA,,Tesla,Consumer Discretionary,2020-2025,,Joined the S&P 500 December 2020
+NFLX,,Netflix,Communication Services,2010-2025,,
+BRK-B,BRK-B,Berkshire Hathaway,Financials,2010-2025,,Joined the S&P 500 in 2010
+MA,,Mastercard,Financials,2008-2025,,
+PYPL,,PayPal,Financials,2016-2025,,Spun out of eBay July 2015
+AMD,,AMD,Information Technology,2000-2012,,Dropped to MidCap 2013 then rejoined the S&P 500 in 2017
+ORCL,,Oracle,Information Technology,2000-2025,,
+TXN,,Texas Instruments,Information Technology,2000-2025,,
+QCOM,,Qualcomm,Information Technology,2000-2025,,
+ADBE,,Adobe,Information Technology,2000-2025,,
+INTU,,Intuit,Information Technology,2001-2025,,
+MU,,Micron,Information Technology,2000-2025,,
+AMAT,,Applied Materials,Information Technology,2000-2025,,
+ACN,,Accenture,Information Technology,2012-2025,,
+AVGO,,Broadcom,Information Technology,2015-2025,,
+NOW,,ServiceNow,Information Technology,2020-2025,,
+PANW,,Palo Alto Networks,Information Technology,2024-2025,,Joined the S&P 500 June 2023
+PLTR,,Palantir,Information Technology,2025-2025,,Joined the S&P 500 September 2024
+UBER,,Uber,Industrials,2024-2025,,Joined the S&P 500 December 2023
+ABNB,,Airbnb,Consumer Discretionary,2024-2025,,Joined the S&P 500 September 2023
+GLW,,Corning,Information Technology,2000-2025,,
+MSI,,Motorola Solutions,Information Technology,2000-2025,,Motorola Inc until the 2011 split
+JDSU,VIAV,JDS Uniphase,Information Technology,2001-2014,,Renamed Viavi 2015
+EBAY,,eBay,Consumer Discretionary,2003-2025,,
+GME,,GameStop,Consumer Discretionary,2008-2015,,Meme-stock mania came later in 2021
+WFC,,Wells Fargo,Financials,2000-2025,,
+MS,,Morgan Stanley,Financials,2000-2025,,
+SCHW,,Charles Schwab,Financials,2000-2025,,
+BLK,,BlackRock,Financials,2012-2025,,
+BK,BNY,BNY Mellon,Financials,2000-2025,,
+USB,,US Bancorp,Financials,2000-2025,,
+COF,,Capital One,Financials,2000-2025,,
+MET,,MetLife,Financials,2001-2025,,
+ALL,,Allstate,Financials,2000-2025,,
+AFL,,Aflac,Financials,2000-2025,,
+PGR,,Progressive,Financials,2000-2025,,
+SPGI,,S&P Global,Financials,2000-2025,,McGraw-Hill until 2016
+COP,,ConocoPhillips,Energy,2003-2025,,
+SLB,,Schlumberger,Energy,2000-2025,,
+HAL,,Halliburton,Energy,2000-2025,,
+OXY,,Occidental Petroleum,Energy,2000-2025,,
+EOG,,EOG Resources,Energy,2001-2025,,
+DVN,,Devon Energy,Energy,2001-2025,,
+UPS,,UPS,Industrials,2003-2025,,
+FDX,,FedEx,Industrials,2000-2025,,
+LMT,,Lockheed Martin,Industrials,2000-2025,,
+NOC,,Northrop Grumman,Industrials,2000-2025,,
+GD,,General Dynamics,Industrials,2000-2025,,
+DE,,Deere,Industrials,2000-2025,,
+UNP,,Union Pacific,Industrials,2000-2025,,
+LUV,,Southwest Airlines,Industrials,2000-2025,,
+EMR,,Emerson Electric,Industrials,2000-2025,,
+ADP,,ADP,Industrials,2000-2025,,
+DAL,,Delta Air Lines,Industrials,2014-2025,,
+NEM,,Newmont,Materials,2000-2025,,
+FCX,,Freeport-McMoRan,Materials,2000-2025,,
+NUE,,Nucor,Materials,2000-2025,,
+APD,,Air Products,Materials,2000-2025,,
+PPG,,PPG Industries,Materials,2000-2025,,
+SO,,Southern Company,Utilities,2000-2025,,
+DUK,,Duke Energy,Utilities,2000-2025,,
+NEE,,NextEra Energy,Utilities,2000-2025,,FPL Group until 2010
+AEP,,American Electric Power,Utilities,2000-2025,,
+D,,Dominion Energy,Utilities,2000-2025,,
+EXC,,Exelon,Utilities,2001-2025,,
+ED,,Consolidated Edison,Utilities,2000-2025,,
+PCG,,PG&E,Utilities,2000-2025,,
+XEL,,Xcel Energy,Utilities,2001-2025,,
+SPG,,Simon Property,Real Estate,2002-2025,,REITs joined the S&P 500 starting late 2001
+PLD,,Prologis,Real Estate,2004-2025,,
+AMT,,American Tower,Real Estate,2008-2025,,
+PSA,,Public Storage,Real Estate,2006-2025,,
+WY,,Weyerhaeuser,Real Estate,2000-2025,,Converted to a REIT 2010
+LLY,,Eli Lilly,Health Care,2000-2025,,
+ABT,,Abbott,Health Care,2000-2025,,
+BMY,,Bristol Myers Squibb,Health Care,2000-2025,,
+GILD,,Gilead Sciences,Health Care,2005-2025,,
+MDT,,Medtronic,Health Care,2000-2025,,
+TMO,,Thermo Fisher,Health Care,2000-2025,,
+DHR,,Danaher,Health Care,2000-2025,,
+CVS,,CVS Health,Health Care,2000-2025,,
+ISRG,,Intuitive Surgical,Health Care,2009-2025,,
+MRNA,,Moderna,Health Care,2022-2025,,Joined the S&P 500 July 2021
+ABBV,,AbbVie,Health Care,2013-2025,,Spun out of Abbott January 2013
+BAX,,Baxter,Health Care,2000-2025,,
+BDX,,Becton Dickinson,Health Care,2000-2025,,
+CI,,Cigna,Health Care,2000-2025,,
+MCK,,McKesson,Health Care,2000-2025,,
+BIIB,,Biogen,Health Care,2004-2025,,
+SBUX,,Starbucks,Consumer Discretionary,2000-2025,,
+TGT,,Target,Consumer Discretionary,2000-2025,,
+LOW,,Lowe's,Consumer Discretionary,2000-2025,,
+GPS,GAP,Gap,Consumer Discretionary,2000-2025,,Ticker changed to GAP in 2024
+F,,Ford,Consumer Discretionary,2000-2025,,
+HOG,,Harley-Davidson,Consumer Discretionary,2000-2019,,Dropped from the S&P 500 June 2020
+YUM,,Yum Brands,Consumer Discretionary,2000-2025,,
+M,,Macy's,Consumer Discretionary,2000-2019,,Dropped from the S&P 500 April 2020
+BKNG,,Booking,Consumer Discretionary,2010-2025,,Priceline until 2018
+EXPE,,Expedia,Consumer Discretionary,2008-2025,,
+CMG,,Chipotle,Consumer Discretionary,2012-2025,,
+CCL,,Carnival,Consumer Discretionary,2000-2025,,
+MAR,,Marriott,Consumer Discretionary,2000-2025,,
+TJX,,TJX,Consumer Discretionary,2000-2025,,
+BBY,,Best Buy,Consumer Discretionary,2000-2025,,
+WHR,,Whirlpool,Consumer Discretionary,2000-2022,,Dropped from the S&P 500 March 2023
+HAS,,Hasbro,Consumer Discretionary,2000-2025,,
+LEN,,Lennar,Consumer Discretionary,2006-2025,,
+RL,,Ralph Lauren,Consumer Discretionary,2008-2025,,
+PEP,,PepsiCo,Consumer Staples,2000-2025,,
+PM,,Philip Morris International,Consumer Staples,2009-2025,,Spun out of Altria March 2008
+CL,,Colgate-Palmolive,Consumer Staples,2000-2025,,
+KMB,,Kimberly-Clark,Consumer Staples,2000-2025,,
+GIS,,General Mills,Consumer Staples,2000-2025,,
+HSY,,Hershey,Consumer Staples,2000-2025,,
+KR,,Kroger,Consumer Staples,2000-2025,,
+COST,,Costco,Consumer Staples,2000-2025,,
+EL,,Estee Lauder,Consumer Staples,2000-2025,,
+KHC,,Kraft Heinz,Consumer Staples,2016-2025,,Kraft-Heinz merger July 2015
+MDLZ,,Mondelez,Consumer Staples,2013-2025,,
+CLX,,Clorox,Consumer Staples,2000-2025,,
+SYY,,Sysco,Consumer Staples,2000-2025,,
+CPB,,Campbell's,Consumer Staples,2000-2025,,
+CMCSA,,Comcast,Communication Services,2003-2025,,
+CHTR,,Charter Communications,Communication Services,2017-2025,,
+TMUS,,T-Mobile US,Communication Services,2020-2025,,
+OMC,,Omnicom,Communication Services,2000-2025,,

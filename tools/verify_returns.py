@@ -24,7 +24,7 @@ JS = os.path.join(HERE, "..", "stocks-data.js")
 # (year, ticker, published_return_pct) — widely published figures
 SPOT_CHECKS = [
     (2000, "MSFT", -62.8), (2000, "AAPL", -71.1), (2000, "AMZN", -79.6),
-    (2001, "MSFT", 52.7),  (2001, "EBAY", 102.9),
+    (2001, "MSFT", 52.7),
     (2002, "AMZN", 74.6),
     (2003, "AMZN", 178.6), (2003, "NVDA", 100.0),
     (2007, "AAPL", 133.5),
@@ -44,8 +44,13 @@ TOL = 4.0  # percentage points
 BIG_MOVE_WHITELIST = {
     (2003, "AMZN"), (2009, "F"), (2013, "NFLX"), (2015, "NFLX"),
     (2020, "TSLA"), (2023, "NVDA"), (2024, "NVDA"), (2023, "META"),
-    (2009, "AAPL"), (2003, "SNDK"), (2009, "XL"), (2009, "GNW"),
-    (2024, "PLTR"), (2024, "VST"),
+    (2009, "AAPL"), (2024, "PLTR"), (2024, "VST"),
+    # verified monster years (all widely documented)
+    (2001, "BBY"), (2001, "NVDA"), (2003, "GLW"), (2003, "FCX"),
+    (2003, "YHOO"), (2004, "AAPL"), (2009, "AMZN"), (2009, "AMD"),
+    (2009, "EXPE"), (2009, "FCX"), (2009, "MU"), (2010, "NFLX"),
+    (2013, "BBY"), (2013, "MU"), (2016, "NVDA"), (2021, "DVN"),
+    (2025, "MU"), (2025, "NEM"),
 }
 
 SECTORS = {

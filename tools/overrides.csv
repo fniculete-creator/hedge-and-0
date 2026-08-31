@@ -1,0 +1,236 @@
+year,ticker,return_pct,source_note
+2000,ENE,87.3,$44.38 -> $83.13
+2001,ENE,-99.3,$83.13 -> $0.60
+2000,LEH,59.6,split-adjusted year-end closes
+2001,LEH,-1.1,estimate
+2002,LEH,-20.3,estimate
+2003,LEH,44.8,year-end closes
+2004,LEH,13.2,year-end closes
+2005,LEH,46.6,year-end closes
+2006,LEH,21.9,year-end closes
+2007,LEH,-16.2,$78.12 -> $65.44
+2008,LEH,-99.9,$65.44 -> pennies after September bankruptcy
+2000,WCOM,-73.5,$53.06 -> $14.06
+2001,WCOM,0.1,year-end closes
+2002,WCOM,-98.8,bankrupt July 2002
+2000,BSC,57.8,estimate
+2001,BSC,-13.0,estimate
+2002,BSC,1.2,estimate
+2003,BSC,34.7,year-end closes
+2004,BSC,28.0,$79.95 -> $102.31
+2005,BSC,12.9,year-end closes
+2006,BSC,40.8,$115.56 -> $162.75
+2007,BSC,-45.8,$162.75 -> $88.25
+2000,WM,104.3,$25.97 -> $53.06
+2001,WM,-3.0,estimate
+2002,WM,9.0,estimate
+2003,WM,16.0,estimate
+2004,WM,5.0,estimate
+2005,WM,3.0,estimate
+2006,WM,9.0,estimate
+2007,WM,-70.1,$45.49 -> $13.61
+2008,WM,-99.8,seized September 2008; $13.61 -> pennies
+2000,SUNW,43.9,estimate
+2001,SUNW,-55.9,$27.87 -> $12.30
+2002,SUNW,-74.7,$12.30 -> $3.11
+2003,SUNW,43.7,year-end closes
+2004,SUNW,20.6,year-end closes
+2005,SUNW,-22.3,year-end closes
+2006,SUNW,29.4,year-end closes
+2007,SUNW,-16.4,estimate
+2008,SUNW,-78.9,$18.13 -> $3.82 after reverse split
+2009,SUNW,141.1,Oracle deal at $9.50
+2000,YHOO,-72.3,$108.47 -> $30.06 split-adjusted
+2001,YHOO,-41.0,year-end closes
+2002,YHOO,-7.9,year-end closes
+2003,YHOO,175.3,$16.35 -> $45.03
+2004,YHOO,67.4,year-end closes
+2005,YHOO,4.0,year-end closes
+2006,YHOO,-34.8,year-end closes
+2007,YHOO,-8.9,year-end closes
+2008,YHOO,-47.5,year-end closes
+2009,YHOO,37.5,year-end closes
+2010,YHOO,-0.9,year-end closes
+2011,YHOO,-3.0,year-end closes
+2012,YHOO,23.4,year-end closes
+2013,YHOO,103.2,$19.90 -> $40.44
+2014,YHOO,24.9,year-end closes
+2015,YHOO,-34.1,year-end closes
+2016,YHOO,16.3,year-end closes
+2005,SHLD,16.7,Kmart $99.00 -> SHLD $115.53
+2006,SHLD,45.4,$115.53 -> $168.00
+2007,SHLD,-39.3,year-end closes
+2008,SHLD,-61.9,year-end closes
+2009,SHLD,115.3,$38.83 -> $83.61
+2010,SHLD,-11.8,year-end closes
+2011,SHLD,-56.9,$73.75 -> $31.78
+2000,CC,-74.9,$45.06 -> $11.31
+2001,CC,139.0,estimate
+2002,CC,-73.0,estimate; CarMax spinoff distorts
+2003,CC,37.0,estimate
+2004,CC,54.0,estimate
+2005,CC,45.0,estimate
+2006,CC,-16.0,estimate
+2007,CC,-77.9,$18.97 -> $4.19
+2000,TWX,-27.8,estimate; pre-merger Time Warner
+2001,TWX,-7.8,estimate
+2002,TWX,-59.2,$32.10 -> $13.10
+2003,TWX,37.3,year-end closes
+2004,TWX,8.1,year-end closes
+2005,TWX,-10.3,year-end closes
+2006,TWX,26.3,estimate
+2007,TWX,-22.7,year-end closes
+2008,TWX,-37.5,estimate
+2009,TWX,30.0,estimate; spinoff-adjusted
+2010,TWX,14.0,estimate
+2011,TWX,14.0,estimate
+2012,TWX,34.0,estimate
+2013,TWX,44.0,estimate
+2014,TWX,25.0,estimate
+2015,TWX,-23.0,estimate
+2016,TWX,49.0,estimate; AT&T bid announced October 2016
+2017,TWX,-5.0,estimate
+2000,RSH,-13.0,estimate
+2001,RSH,-30.3,estimate
+2002,RSH,-37.1,estimate
+2003,RSH,63.5,estimate
+2004,RSH,7.1,estimate
+2005,RSH,-36.0,estimate
+2006,RSH,-20.3,estimate
+2007,RSH,0.5,estimate
+2008,RSH,-29.2,estimate
+2009,RSH,63.4,estimate
+2010,RSH,-5.2,estimate
+2011,RSH,-47.4,$18.49 -> $9.72
+2000,AVP,45.1,$33.00 -> $47.88
+2001,AVP,-2.8,estimate
+2002,AVP,15.7,estimate
+2003,AVP,25.3,estimate
+2004,AVP,14.7,estimate; split-adjusted
+2005,AVP,-26.2,estimate
+2006,AVP,15.7,estimate
+2007,AVP,19.6,estimate
+2008,AVP,-39.2,estimate
+2009,AVP,31.1,estimate
+2010,AVP,-7.7,estimate
+2011,AVP,-39.9,estimate
+2012,AVP,-17.8,estimate
+2013,AVP,19.9,estimate
+2014,AVP,-45.5,estimate
+2015,AVP,-56.9,$9.39 -> $4.05
+2000,JCP,-44.8,estimate
+2001,JCP,145.0,estimate; Questrom turnaround
+2002,JCP,-14.6,estimate
+2003,JCP,14.0,estimate
+2004,JCP,57.5,estimate
+2005,JCP,34.3,estimate
+2006,JCP,39.0,$55.60 -> $77.29
+2007,JCP,-43.1,year-end closes
+2008,JCP,-55.2,year-end closes
+2009,JCP,35.0,estimate
+2010,JCP,21.3,estimate
+2011,JCP,8.9,estimate
+2012,JCP,-43.9,$35.16 -> $19.71
+2005,BBBY,-9.2,estimate
+2006,BBBY,5.3,estimate
+2007,BBBY,-22.8,estimate
+2008,BBBY,-13.5,estimate
+2009,BBBY,52.0,estimate
+2010,BBBY,27.2,estimate
+2011,BBBY,18.0,estimate
+2012,BBBY,-3.6,estimate
+2013,BBBY,43.7,estimate
+2014,BBBY,-5.1,estimate
+2015,BBBY,-36.6,estimate
+2016,BBBY,-15.8,estimate
+2017,BBBY,-45.9,estimate
+2018,BBBY,-48.5,estimate
+2019,BBBY,52.6,estimate
+2000,LU,-81.9,$74.81 -> $13.50
+2001,LU,-53.3,year-end closes
+2002,LU,-80.0,$6.30 -> $1.26
+2003,LU,125.4,$1.26 -> $2.84
+2004,LU,32.4,year-end closes
+2005,LU,-29.3,year-end closes
+2006,LU,-4.5,year-end closes
+2000,CPQ,-44.4,$27.07 -> $15.05
+2001,CPQ,-35.1,year-end closes
+2000,DELL,-65.8,$51.00 -> $17.44
+2001,DELL,55.8,year-end closes
+2002,DELL,-1.6,year-end closes
+2003,DELL,27.1,year-end closes
+2004,DELL,24.0,year-end closes
+2005,DELL,-28.9,year-end closes
+2006,DELL,-16.3,year-end closes
+2007,DELL,-2.2,year-end closes
+2008,DELL,-58.3,$24.54 -> $10.24
+2009,DELL,40.2,year-end closes
+2010,DELL,-5.6,year-end closes
+2011,DELL,8.0,year-end closes
+2012,DELL,-30.7,year-end closes
+2019,TWTR,11.6,$28.74 -> $32.06
+2020,TWTR,68.9,$32.06 -> $54.15
+2021,TWTR,-20.2,$54.15 -> $43.22
+2022,TWTR,25.4,$54.20 Musk buyout
+2000,EK,-38.9,estimate with dividends
+2001,EK,-25.3,estimate
+2002,EK,19.1,estimate
+2003,EK,-26.7,estimate
+2004,EK,25.6,estimate
+2005,EK,-27.4,estimate
+2006,EK,10.3,estimate
+2007,EK,-15.2,estimate
+2008,EK,-69.9,$21.87 -> $6.58
+2009,EK,-35.9,year-end closes
+2010,EK,27.0,year-end closes
+2000,GM,-27.2,estimate with dividends
+2001,GM,0.3,estimate
+2002,GM,-19.0,estimate
+2003,GM,52.9,estimate with dividends
+2004,GM,-21.5,estimate
+2005,GM,-48.4,worst Dow stock of 2005
+2006,GM,58.2,best Dow stock of 2006
+2007,GM,-19.0,year-end closes
+2008,GM,-87.1,$24.89 -> $3.20
+2000,AA,-19.3,estimate
+2001,AA,6.1,estimate
+2002,AA,-35.9,estimate
+2003,AA,66.8,estimate
+2004,AA,-17.3,estimate
+2005,AA,-5.9,estimate
+2006,AA,1.5,estimate
+2007,AA,21.8,estimate
+2008,AA,-69.2,$36.55 -> $11.26
+2009,AA,43.2,year-end closes
+2010,AA,-4.5,year-end closes
+2011,AA,-43.8,$15.39 -> $8.65
+2012,AA,0.3,year-end closes
+2013,AA,22.5,year-end closes
+2014,AA,48.5,year-end closes
+2015,AA,-37.5,year-end closes
+2000,WBA,42.9,estimate; traded as WAG
+2001,WBA,-19.6,estimate
+2002,WBA,-13.2,estimate
+2003,WBA,24.7,estimate
+2004,WBA,5.4,estimate
+2005,WBA,15.4,estimate
+2006,WBA,3.7,estimate
+2007,WBA,-17.0,estimate
+2008,WBA,-35.2,estimate
+2009,WBA,48.8,estimate
+2010,WBA,6.1,estimate
+2011,WBA,-15.1,estimate
+2012,WBA,11.9,estimate
+2013,WBA,55.2,Alliance Boots deal year
+2014,WBA,32.7,estimate
+2015,WBA,11.8,estimate
+2016,WBA,-2.8,estimate
+2017,WBA,-12.3,estimate
+2018,WBA,-5.9,estimate
+2019,WBA,-13.7,estimate
+2020,WBA,-32.4,estimate
+2021,WBA,30.8,estimate
+2022,WBA,-28.4,estimate
+2023,WBA,-30.1,estimate
+2024,WBA,-64.4,$26.11 -> $9.30
+2008,AIG,-97.3,$58.30 -> $1.57
