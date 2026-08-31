@@ -39,6 +39,15 @@ body {
 .zero { font-family: "Arial Black", Arial, sans-serif; font-size: .92em; }
 
 /* ===== Setup ===== */
+.sr-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.hero {
+  display: block;
+  width: min(92vw, 540px);
+  margin: 20px auto 4px;
+  border-radius: 14px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 10px 34px rgba(0,0,0,.55);
+}
 .logo {
   text-align: center;
   font-family: Georgia, "Times New Roman", serif;
