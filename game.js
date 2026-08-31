@@ -471,7 +471,7 @@
       `${fmt$(state.bankroll)} (${fmtPct(pct)}) ${emojiLine()}`,
       state.picks.map((p) => shortYear(p.y)).join(" ") +
         ` · S&P would've made ${fmt$(benchmark())}`,
-      "https://fniculete-creator.github.io/hedge-and-0/",
+      "https://hedge-and-0.vercel.app/",
     ].join("\n");
   }
 
