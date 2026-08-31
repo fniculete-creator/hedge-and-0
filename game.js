@@ -257,6 +257,7 @@
       let media;
       if (info.img) {
         media = document.createElement("img");
+        if (slot.key === "president") media.className = "portrait";
         media.src = info.img;
         media.alt = slot.label + " " + year;
         media.loading = "lazy";
