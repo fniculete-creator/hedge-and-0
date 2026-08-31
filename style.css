@@ -34,6 +34,10 @@ body {
 
 .screen { padding: 14px; max-width: 760px; margin: 0 auto; }
 
+/* Georgia draws old-style digits (0 at lowercase-o height) — render the
+   game name's zero in a full-height face so it reads as a 0, not an o. */
+.zero { font-family: "Arial Black", Arial, sans-serif; font-size: .92em; }
+
 /* ===== Setup ===== */
 .logo {
   text-align: center;
