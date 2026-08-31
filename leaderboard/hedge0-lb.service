@@ -1,0 +1,14 @@
+[Unit]
+Description=Hedge and 0 leaderboard server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/hedge0-lb
+ExecStart=/usr/bin/python3 /home/ubuntu/hedge0-lb/server.py --port 8126 --db /home/ubuntu/hedge0-lb/hedge0-lb.db
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Hedge and 0</title>
+<meta name="description" content="Start with $1,000,000. Spin the wheel of years (2000–2025), pick the S&P 500 stock you think crushed it that year, and grow — or torch — your fortune. Same 5 years for everyone, every day.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hedge and 0">
+<meta property="og:description" content="Start with $1,000,000. Spin the wheel of years, pick the best stock of each year, top the daily leaderboard.">
+<meta property="og:image" content="https://fniculete-creator.github.io/hedge-and-0/preview.png">
+<meta property="og:url" content="https://fniculete-creator.github.io/hedge-and-0/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='15' fill='%230b3d2e'/%3E%3Ctext x='50' y='72' font-size='58' text-anchor='middle' fill='%23f5c542' font-family='Georgia' font-weight='bold'%3E%24%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Setup screen ===== -->
+<div id="setup-screen" class="screen">
+  <h1 class="logo">HEDGE<br>AND&nbsp;0</h1>
+  <p class="tagline">You start with <b>$1,000,000</b>. The wheel picks a year from 2000&ndash;2025 &mdash; you pick the S&amp;P&nbsp;500 stock you think performed best that year. Five spins. Same years for everyone, every day. Highest fortune tops the leaderboard.</p>
+  <div class="setup-card">
+    <label class="field-label" for="player-name">Your name (for the leaderboard)</label>
+    <input id="player-name" type="text" maxlength="20" placeholder="Your name" autocomplete="off">
+    <div class="setup-actions">
+      <button id="start-daily" class="btn primary big">Spin Today's Wheel</button>
+      <button id="show-lb" class="btn big">Leaderboard</button>
+    </div>
+    <p id="resume-note" class="note hidden">A game in progress was found &mdash; starting will resume it.</p>
+    <p id="played-note" class="note hidden">You already played today &mdash; new wheel at midnight Pacific.</p>
+  </div>
+  <p class="footnote">Returns are calendar-year price change including dividends (split/dividend-adjusted close). &asymp; marks approximate figures for delisted companies.</p>
+</div>
+
+<!-- ===== Game screen ===== -->
+<div id="game-screen" class="screen hidden">
+  <header id="game-header">
+    <span id="round-title">HEDGE AND 0</span>
+    <span id="game-date"></span>
+    <span class="header-actions">
+      <span id="spin-chip"></span>
+      <span id="bankroll-chip" class="tnum">$1,000,000</span>
+    </span>
+  </header>
+
+  <!-- Wheel panel -->
+  <div id="wheel-panel" class="panel">
+    <p id="wheel-hint" class="panel-hint">Spin to land on a year&hellip;</p>
+    <div id="wheel-wrap">
+      <div id="wheel-pointer">&#9660;</div>
+      <div id="wheel"></div>
+      <div id="wheel-hub">SPIN</div>
+    </div>
+    <button id="spin-btn" class="btn primary big">SPIN THE WHEEL</button>
+  </div>
+
+  <!-- Year context panel -->
+  <div id="context-panel" class="panel hidden">
+    <div id="ctx-year" class="ctx-year"></div>
+    <div id="ctx-sp" class="ctx-sp"></div>
+    <div id="ctx-cards" class="ctx-cards"></div>
+    <button id="to-picker-btn" class="btn primary big">Pick your stock &rarr;</button>
+  </div>
+
+  <!-- Stock picker panel -->
+  <div id="picker-panel" class="panel hidden">
+    <div id="pick-year-title" class="ctx-year small"></div>
+    <p class="panel-hint">Which S&amp;P&nbsp;500 stock performed best this year? Your whole bankroll rides on it.</p>
+    <input id="stock-search" type="search" placeholder="Search company or ticker&hellip;" autocomplete="off">
+    <div id="filter-row">
+      <div id="sector-chips"></div>
+      <label id="dow-row"><input id="dow-toggle" type="checkbox"> Dow 30 only</label>
+    </div>
+    <div id="stock-list"></div>
+    <div id="confirm-bar" class="hidden">
+      <span id="confirm-text"></span>
+      <button id="confirm-btn" class="btn primary">Lock it in</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Reveal modal ===== -->
+<div id="reveal-modal" class="modal hidden">
+  <div class="modal-box">
+    <div id="rev-year" class="modal-cat"></div>
+    <div id="rev-verdict" class="rev-verdict"></div>
+    <div id="rev-pick-line" class="rev-pick"></div>
+    <div id="rev-return" class="rev-return tnum"></div>
+    <div id="rev-bankroll-line" class="rev-bankroll tnum"></div>
+    <div id="rev-note" class="note hidden"></div>
+    <div class="rev-facts">
+      <div id="rev-best"></div>
+      <div id="rev-rank"></div>
+      <div id="rev-sp"></div>
+    </div>
+    <button id="next-btn" class="btn primary big">Next</button>
+  </div>
+</div>
+
+<!-- ===== Results modal ===== -->
+<div id="results-modal" class="modal hidden">
+  <div class="modal-box">
+    <div class="modal-cat">FINAL FORTUNE</div>
+    <div id="res-bankroll" class="results-score tnum"></div>
+    <div id="res-sub" class="results-sub"></div>
+    <div id="res-bench" class="results-bench"></div>
+    <div id="res-recap"></div>
+    <div class="lb-section">
+      <div class="lb-title">Leaderboard</div>
+      <div class="lb-tabs">
+        <button id="res-tab-daily" class="lb-tab active">Today</button>
+        <button id="res-tab-alltime" class="lb-tab">All-time</button>
+      </div>
+      <p id="lb-no-name" class="note hidden">Enter a name on the start screen to appear on the leaderboard.</p>
+      <div id="res-lb-list" class="lb-list"></div>
+    </div>
+    <div class="setup-actions">
+      <button id="copy-results" class="btn primary">Copy Results to Share</button>
+      <button id="back-to-menu" class="btn">Back to Menu</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Leaderboard modal ===== -->
+<div id="lb-modal" class="modal hidden">
+  <div class="modal-box">
+    <div class="modal-cat">LEADERBOARD</div>
+    <div id="lb-date" class="lb-date"></div>
+    <div class="lb-tabs">
+      <button id="lb-tab-daily" class="lb-tab active">Today</button>
+      <button id="lb-tab-alltime" class="lb-tab">All-time</button>
+    </div>
+    <div id="lb-list" class="lb-list"></div>
+    <div class="setup-actions">
+      <button id="lb-close" class="btn primary big">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="stocks-data.js"></script>
+<script src="context-data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
